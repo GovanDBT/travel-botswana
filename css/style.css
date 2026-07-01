@@ -39,6 +39,7 @@ h1 {
     font-size: 3.7rem;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 p {
@@ -145,4 +146,41 @@ nav {
     justify-content: center;
     gap: 30px;
     width: 650px;
+}
+
+/* About Section */
+.about-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tag {
+    background-color: var(--button-color);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 20px;
 }
