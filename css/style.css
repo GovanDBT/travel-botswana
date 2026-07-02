@@ -207,7 +207,7 @@ nav {
     gap: 25px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .field input, .field textarea {
@@ -222,4 +222,37 @@ nav {
 
 .field input::placeholder, .field textarea::placeholder {
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* Destination Cards */
+
+.destination-card-wrapper {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.destination-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: #0f2e3b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.destination-card h3,
+.destination-card p {
+    margin: 0;
 }
