@@ -20,8 +20,8 @@ function findDestination() {
                     searchResultContainer.innerHTML = '<h1 style="margin-top:30px;">Search Result</h1>';
                     const destinationCardWrapper = document.createElement('div');
                     destinationCardWrapper.classList.add('destination-card-wrapper');
-                    for (country of data.countries) {
-                        for (city of country.cities) {
+                    for (const country of data.countries) {
+                        for (const city of country.cities) {
                             const destinationCard = document.createElement('div');
                             destinationCard.innerHTML += `<img src='${city.imageUrl}' />`;
                             destinationCard.innerHTML += `<h3>${city.name}</h3>`;
@@ -41,7 +41,7 @@ function findDestination() {
                     searchResultContainer.innerHTML = '<h1>Search Result</h1>';
                     const destinationCardWrapper = document.createElement('div');
                     destinationCardWrapper.classList.add('destination-card-wrapper');
-                    for (temple of data.temples) {
+                    for (const temple of data.temples) {
                         const destinationCard = document.createElement('div');
                         destinationCard.innerHTML += `<img src='${temple.imageUrl}' />`;
                         destinationCard.innerHTML += `<h3>${temple.name}</h3>`;
@@ -57,7 +57,7 @@ function findDestination() {
                     searchResultContainer.innerHTML = '<h1>Search Result</h1>';
                     const destinationCardWrapper = document.createElement('div');
                     destinationCardWrapper.classList.add('destination-card-wrapper');
-                    for (beach of data.beaches) {
+                    for (const beach of data.beaches) {
                         const destinationCard = document.createElement('div');
                         destinationCard.innerHTML += `<img src='${beach.imageUrl}' />`;
                         destinationCard.innerHTML += `<h3>${beach.name}</h3>`;
