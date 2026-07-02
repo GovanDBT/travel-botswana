@@ -12,7 +12,7 @@ function findDestination() {
     const searchResult = document.getElementById('searchResult').value.toLowerCase();
 
     if (searchResult) {
-        fetch('../travel_botswana_api.json')
+        fetch('travel_botswana_api.json')
             .then(response => response.json())
             .then(data => {
                 if (searchResult === "countries" || searchResult === "country") {
